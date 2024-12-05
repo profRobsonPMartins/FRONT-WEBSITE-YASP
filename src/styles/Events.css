@@ -1,0 +1,74 @@
+.events-section{
+    text-align: center;
+    padding: 32px;
+}
+
+.section-title{
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: var(--segunda-cor);
+}
+
+.events-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.event-card {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.event-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-info{
+    padding: 16px;
+}
+
+.event-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--segunda-cor);
+    color: var(--quinta-cor);
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 1px;
+}
+
+.event-day{
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.event-month{
+    font-size: 16px;
+}
+
+.event-title{
+    font-size: 20px;
+    color: var(--terceira-cor);
+}
+
+.event-time, .event-speaker{
+    font-size: 14px;
+    color: var(--quarta-cor);
+}
+.view-calendar-btn{
+    background-color: var(--segunda-cor);
+    color: var(--quinta-cor);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 32px;
+}

@@ -1,3 +1,27 @@
+:root{
+  /* Tamanhos de titulos/subtitulos/paragrafo para desktop */
+  --titulo-size: 3.8125rem;
+  /* Page */
+  --sub-hero: 1.875rem;
+  --subtitulo-size: 2.75rem;
+  --paragrafo-size: .875rem;
+  /* btns font-size desktop */
+  --fonts-btns: 1rem;
+  --width-btns: 10.655rem;
+  
+  /* Color desktop and responsive */
+  --primeira-cor: #000;
+  --segunda-cor: #B80924;
+  --terceira-cor: #0D2D62;
+  --quarta-cor: #555;
+  --quinta-cor: #fff;
+
+  --background-page: #fff;
+}
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

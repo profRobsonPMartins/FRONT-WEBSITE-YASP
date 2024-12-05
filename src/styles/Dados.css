@@ -1,0 +1,64 @@
+.statistics-section {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: var(--background-body);
+  }
+  
+  .section-title {
+    font-size: var(--subtitulo-size);
+    margin-bottom: 1rem;
+    color: var(--primeira-cor);
+  }
+  
+  .section-description {
+    font-size: var(--paragrafo-size);
+    margin-bottom: 3rem;
+    color: var(--quarta-cor);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 1200px) {
+    .statistics-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .statistics-grid {
+      grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+    }
+  }
+  
+  .stat-card {
+    background-color: var(--quinta-cor);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card i {
+    font-size: 2.5rem;
+    color: var(--terceira-cor);
+    margin-bottom: 1rem;
+  }
+  
+  .stat-card h3 {
+    font-size: 2rem;
+    color: var(--segunda-cor);
+    margin: 0.5rem 0;
+  }
+  
+  .stat-card p {
+    font-size: var(--paragrafo-size);
+    color: var(--primeira-cor);
+  }
+  
