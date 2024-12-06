@@ -13,6 +13,9 @@ import Footer from './components/Footer/Footer';
 
 // Pages
 import Hero from './pages/Hero';
+import FeiraCultural from './pages/FeiraCultural';
+import CombateAbuso from './pages/CombateAbuso';
+import Caicaras from './pages/Caicaras';
 
 function App() {
   return (
@@ -29,7 +32,9 @@ function App() {
             <Contact />
           </>
         } />
-        {/* <Route path='/matematica' element={<MathContent />} /> */}
+        <Route path='/feira-cultural' element={<FeiraCultural />} />
+        <Route path='//combate-abuso-sexual' element={<CombateAbuso />} />
+        <Route path='/caicaras' element={<Caicaras />} />
       </Routes>
       <Footer />
     </Router>

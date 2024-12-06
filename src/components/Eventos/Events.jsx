@@ -1,8 +1,17 @@
 import React from "react";
+import {  useNavigate } from "react-router-dom";
 import '../../styles/Events.css'
 import img01 from '../img/salaYasp2024.svg'
+import imgFeiraCultural from '../img/Feira Cultural 1.svg'
+import imgCaicaras from '../img/Caiçaras 1.svg'
+import imgCombateAbuso from '../img/Faça Bonito 1.svg'
+import imgMeninasSol from '../img/Meninas do Sol 1.svg'
+import imgSarauLiterario from '../img/Sarau Literário 1.svg'
+import imgEscolaVerao from '../img/Escola de Verão 1.svg'
 
 const Events = () => {
+
+    const navigate = useNavigate();
 
     const events = [
         {
@@ -11,7 +20,8 @@ const Events = () => {
             time: '7:00 pm',
             title: 'Feira Cultural',
             speaker: 'E. E. Prof. Yolanda Araújo Silva Paiva',
-            img: img01,
+            img: imgFeiraCultural,
+            route: '/feira-cultural',
         },
         {
             date: '18',
@@ -19,7 +29,8 @@ const Events = () => {
             time: '7:00 pm',
             title: 'Combate ao Abuso Sexual',
             speaker: 'E. E. Prof. Yolanda Araújo Silva Paiva',
-            img: img01,
+            img: imgCombateAbuso,
+            route: '/combate-abuso-sexual',
         },
         {
             date: '15',
@@ -27,7 +38,35 @@ const Events = () => {
             time: '7:00 pm',
             title: 'Caiçaras',
             speaker: 'E. E. Prof. Yolanda Araújo Silva Paiva',
-            img: img01,
+            img: imgCaicaras,
+            route: '/caicaras',
+        },
+        {
+            date: '03',
+            month: 'Dezembro',
+            time: '17:30 pm',
+            title: 'Meninas do Sol',
+            speaker: 'E. E. Prof. Yolanda Araújo Silva Paiva',
+            img: imgMeninasSol,
+            route: '/meninas-sol',
+        },
+        {
+            date: '31',
+            month: 'Outubro',
+            time: '19:00 pm',
+            title: 'Sarau de Literatura Poética',
+            speaker: 'E. E. Prof. Yolanda Araújo Silva Paiva',
+            img: imgSarauLiterario,
+            route: '/sarau-literario',
+        },
+        {
+            date: '29',
+            month: 'janeiro',
+            time: '7:00 pm',
+            title: 'Escola de Verão',
+            speaker: 'E. E. Prof. Yolanda Araújo Silva Paiva',
+            img: imgEscolaVerao,
+            route: '/caicaras',
         },
     ]
     return (
@@ -49,6 +88,12 @@ const Events = () => {
                             <h3 className="event-title">{event.title}</h3>
                             <p className="event-time">{event.time}</p>
                             <p className="event-speaker"><i className="icon-person"></i>{event.speaker}</p>
+                            <button
+                                className="event-button-events"
+                                onClick={() => navigate(event.route)}
+                            >
+                                Ver mais
+                            </button>
                         </div>
                     </div>
                 ))}

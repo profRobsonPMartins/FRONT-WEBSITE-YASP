@@ -1,47 +1,55 @@
 import React from 'react';
 import '../../styles/News.css'; // Arquivo CSS para estilização
-import img01 from '../img/salaYasp2024.svg'; 
-import imgUSP from '../img/usp-cidade-universitaria-1536x868-1 1.svg'
-import imgLicenciaturaCampo from '../img/Lecampo-inscricoes-abertas-2-semestre-Captura-de-tela-2024-10-16-144900 1.svg'
-import imgEmancicla from '../img/dignidade-menstrual.svg'
+import imgUSP from '../img/usp-cidade-universitaria-1536x868-1 1.svg';
+import imgLicenciaturaCampo from '../img/Lecampo-inscricoes-abertas-2-semestre-Captura-de-tela-2024-10-16-144900 1.svg';
+import imgEmancicla from '../img/dignidade-menstrual.svg';
+import imgLgpd from '../img/lgpd.svg'
+import imgEnem from '../img/enem-2024.svg'
+
 
 const News = () => {
   const articles = [
     {
       title: 'Inscrição para o Enem-USP',
-      description: 'As inscrições começaram no dia 27 de Novembro e termina dia 20 de Dezembro.',
+      description: 'As inscrições para o processo seletivo da USP, que utiliza a nota do ENEM, começaram no dia 27 de Novembro e vão até o dia 20 de Dezembro. O processo é voltado para candidatos que desejam ingressar em cursos de graduação da Universidade de São Paulo.',
       img: imgUSP,
       time: 'Há 3 dias',
+      link: 'https://www.saopaulo.sp.gov.br/spnoticias/ultimas-noticias/usp-abre-inscricoes-para-processo-seletivo-que-usa-a-nota-do-enem/',
     },
     {
       title: 'Licenciatura em Educação do Campo – Ciências da Natureza.',
-      description: 'Ficam abertas até o dia 16 de novembro as inscrições para o processo seletivo do curso de Licenciatura em Educação do Campo – Ciências da Natureza, ofertado pelo Setor Litoral da Universidade Federal do Paraná (UFPR). ',
+      description: 'Ficam abertas até o dia 16 de novembro as inscrições para o processo seletivo do curso de Licenciatura em Educação do Campo – Ciências da Natureza, ofertado pelo Setor Litoral da Universidade Federal do Paraná (UFPR).',
       img: imgLicenciaturaCampo,
       time: 'Há 1 semana',
+      link: 'https://www.ufpr.br/portalufpr/',
     },
     {
       title: 'EmanCicla',
-      description: 'O EmanCicla tem o propósito de naturalizar o diálogo sobre o ciclo menstrual e a menstrua-ção, contribuindo para a dignidade menstrual. Duas alunas ganharam bolsa R$500 reais.',
+      description: 'O EmanCicla tem o propósito de naturalizar o diálogo sobre o ciclo menstrual e a menstruação, contribuindo para a dignidade menstrual. Duas alunas ganharam bolsa R$500 reais.',
       img: imgEmancicla,
       time: 'Há 2 semanas',
+      link: 'https://www.gov.br/saude/pt-br/campanhas-da-saude/2024/dignidade-menstrual',
     },
     {
-      title: 'Concurso de Redação: Cidadania e Democracia',
-      description: 'Alunos de todos os anos podem participar do concurso de redação com o tema "Cidadania e Democracia". Os melhores trabalhos serão premiados e expostos na biblioteca.',
-      img: img01,
-      time: 'Há 5 dias',
+      title: 'Você sabe o que é a LGPD?',
+      description: 'A LGPD regula o tratamento de dados pssoais, garantindo maior privacidade e segurança. Empresas devem obter consentimentos antes de usar informações sensíveis e respeitar os direitos dos cidadãos.',
+      img: imgLgpd,
+      time: 'Há 3 dias',
+      link: 'https://www.gov.br/mds/pt-br/acesso-a-informacao/governanca/integridade/campanhas/lgpd',
     },
     {
-      title: 'Matrículas Abertas para 2025',
-      description: 'A escola está com matrículas abertas para o ano letivo de 2025. Pais e responsáveis devem comparecer à secretaria escolar com a documentação necessária.',
-      img: img01,
+      title: 'Enem 2024.',
+      description: 'O Exame nacional do Ensino Médio (ENEM) é uma das portas de entrada para o ensino superior no Brasil. Em 2024, ele traz foco em atualidades.',
+      img: imgEnem,
       time: 'Há 1 semana',
+      link: 'https://enem.inep.gov.br/participante/#!/',
     },
     {
-      title: 'Dia da Família na Escola',
-      description: 'Convidamos todos os pais e familiares para um dia especial na escola com atividades, palestras e apresentações culturais, reforçando a parceria entre família e escola.',
-      img: img01,
-      time: 'Há 3 semanas',
+      title: 'EmanCicla',
+      description: 'O EmanCicla tem o propósito de naturalizar o diálogo sobre o ciclo menstrual e a menstruação, contribuindo para a dignidade menstrual. Duas alunas ganharam bolsa R$500 reais.',
+      img: imgEmancicla,
+      time: 'Há 2 semanas',
+      link: 'https://www.gov.br/saude/pt-br/campanhas-da-saude/2024/dignidade-menstrual',
     }
   ];
 
@@ -56,6 +64,16 @@ const News = () => {
               <h3 className="news-title">{article.title}</h3>
               <p className="news-description">{article.description}</p>
               <p className="news-time"><i className="icon-calendar"></i> {article.time}</p>
+              {article.link && (
+                <a
+                  href={article.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="news-link-btn"
+                >
+                  Leia Mais
+                </a>
+              )}
             </div>
           </div>
         ))}
@@ -66,7 +84,3 @@ const News = () => {
 };
 
 export default News;
-
-// https://www.saopaulo.sp.gov.br/spnoticias/ultimas-noticias/usp-abre-inscricoes-para-processo-seletivo-que-usa-a-nota-do-enem/
-
-// https://www.gov.br/saude/pt-br/campanhas-da-saude/2024/dignidade-menstrual
