@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../styles/News.css'; // Arquivo CSS para estilização
-import imgUSP from '../img/usp-cidade-universitaria-1536x868-1 1.svg';
-import imgLicenciaturaCampo from '../img/Lecampo-inscricoes-abertas-2-semestre-Captura-de-tela-2024-10-16-144900 1.svg';
+import imgUSP from '../img/usp-novo.svg';
+import imgLicenciaturaCampo from '../img/lecampo-novo.svg';
 import imgEmancicla from '../img/dignidade-menstrual.svg';
 import imgLgpd from '../img/lgpd.svg'
 import imgEnem from '../img/enem-2024.svg'
-
+import imgProvaoPaulista from '../img/provao-paulista.svg'
 
 const News = () => {
   const articles = [
@@ -45,11 +45,11 @@ const News = () => {
       link: 'https://enem.inep.gov.br/participante/#!/',
     },
     {
-      title: 'EmanCicla',
-      description: 'O EmanCicla tem o propósito de naturalizar o diálogo sobre o ciclo menstrual e a menstruação, contribuindo para a dignidade menstrual. Duas alunas ganharam bolsa R$500 reais.',
-      img: imgEmancicla,
+      title: 'Provão Paulista',
+      description: 'A Prova Paulista é uma avaliação que serve para diagnosticar o aprendizado dos alunos e contribuir para a melhoria do ensino.',
+      img: imgProvaoPaulista,
       time: 'Há 2 semanas',
-      link: 'https://www.gov.br/saude/pt-br/campanhas-da-saude/2024/dignidade-menstrual',
+      link: 'https://sed.educacao.sp.gov.br/',
     }
   ];
 
@@ -78,7 +78,7 @@ const News = () => {
           </div>
         ))}
       </div>
-      <button className="view-all-btn">Ver Todas as Notícias</button>
+      <button className="view-all-btn"><a href="https://www.saopaulo.sp.gov.br/spnoticias/ultimas-noticias/" target="_blank">Ver Todas as Notícias</a></button>
     </section>
   );
 };

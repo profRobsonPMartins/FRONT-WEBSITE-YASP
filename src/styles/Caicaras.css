@@ -1,0 +1,60 @@
+.caicaras-container {
+    background-color: var(--quinta-cor);
+    color: var(--quinta-cor);
+    padding: 40px 20px;
+    margin-top: 20px;
+  }
+  
+  .caicaras-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .caicaras-header h1 {
+    font-size: 2.5em;
+    color: var(--segunda-cor);
+    margin-bottom: 10px;
+  }
+  
+  .caicaras-header p {
+    font-size: 1.2em;
+    color: var(--quarta-cor);
+  }
+  .caicaras-header p strong{
+    color: var(--segunda-cor);
+  }
+  .caicaras-article {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1em;
+  }
+  
+  .caicaras-image {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 2px solid var(--quarta-cor);
+  }
+  
+  .caicaras-article p {
+    margin-bottom: 20px;
+    color: var(--terceira-cor);
+    text-align: justify;
+  }
+  
+  .caicaras-article strong {
+    color: var(--segunda-cor);
+  }
+  
+  @media (max-width: 768px) {
+    .caicaras-header h1 {
+      font-size: 2em;
+    }
+  
+    .caicaras-article {
+      padding: 0 10px;
+    }
+  }
+  

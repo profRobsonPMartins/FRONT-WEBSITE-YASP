@@ -6,7 +6,7 @@ import "../styles/Hero.css"; // Adicione estilos personalizados aqui
 
 import img01 from '../components/img/salaYasp2024.svg';
 import img02 from '../components/img/laboratorioYasp2024.svg';
-import img03 from '../components/img/corredorYasp2024.svg';
+import img03 from '../components/img/entrada-yasp-certificate.svg';
 
 const Hero = () => {
 
@@ -23,19 +23,19 @@ const Hero = () => {
 
     const slides = [
         {
-            img: img01, 
+            img: img03, 
             title: "Construindo um Futuro Melhor",
-            text: "Aqui, o aprendizado transforma vidas. Junte-se a nós e faça parte de uma jornada de crescimento.",
+            text: "Aqui, o aprendizado transforma vidas.",
+        },
+        {
+            img: img01,
+            title: "Inclusão e Oportunidades para Todos",
+            text: "Acreditamos no poder da educação inclusiva e gratuita.",
         },
         {
             img: img02,
-            title: "Inclusão e Oportunidades para Todos",
-            text: "Acreditamos no poder da educação inclusiva e gratuita. Juntos, abrimos portas para um futuro cheio de oportunidades.",
-        },
-        {
-            img: img03,
             title: "Educação de Qualidade para Todos",
-            text: "Na nossa escola, cada estudante tem a oportunidade de aprender, crescer e conquistar seu futuro.",
+            text: "Na nossa escola, cada estudante tem a oportunidade de aprender.",
         },
     ];
 
@@ -49,8 +49,7 @@ const Hero = () => {
                             <h1>{slide.title}</h1>
                             <p>{slide.text}</p>
                             <div className="hero-buttons">
-                                <button className="btn-primary">Sign Up</button>
-                                <button className="btn-secondary">Learn More</button>
+                                <button className="btn-primary">Entre em Contato</button>
                             </div>
                         </div>
                     </div>

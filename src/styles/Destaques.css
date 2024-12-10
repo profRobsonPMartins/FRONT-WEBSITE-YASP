@@ -1,0 +1,92 @@
+
+.destaques-container {
+    background-color: var(--quinta-cor);
+    color: var(--quinta-cor);
+    padding: 40px 20px;
+  }
+  
+  .destaques-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .destaques-header h1 {
+    font-size: 2.5em;
+    color: var(--segunda-cor);
+    margin-bottom: 10px;
+  }
+  
+  .destaques-header p {
+    font-size: 1.2em;
+    color: var(--quarta-cor);
+  }
+  
+  .destaques-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .destaque-card {
+    background-color: var(--segunda-cor);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(3, 6, 96, 0.743);
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .destaque-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .destaque-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .destaque-info {
+    padding: 20px;
+  }
+  
+  .destaque-info h3 {
+    font-size: 1.6em;
+    color: var(--terceira-cor);
+    margin-bottom: 10px;
+  }
+  
+  .destaque-info p {
+    font-size: 1.1em;
+    color: var(--quinta-cor);
+  }
+  
+  @media (max-width: 768px) {
+    .destaques-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .destaque-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .destaques-header h1 {
+      font-size: 2em;
+    }
+  
+    .destaque-info h3 {
+      font-size: 1.4em;
+    }
+  
+    .destaque-info p {
+      font-size: 1em;
+    }
+  }
+  

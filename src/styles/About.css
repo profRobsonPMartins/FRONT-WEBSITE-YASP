@@ -1,0 +1,190 @@
+/* Seção principal */
+.about-section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
+  .section-title-h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--terceira-cor);
+    margin-bottom: 30px;
+    position: relative;
+  }
+/*   
+  .icon-graduation {
+    margin-left: 10px;
+    color: var(--segunda-cor);
+    font-size: 40px;
+  } */
+  
+  /* Container dos serviços */
+  .services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Lados esquerdo e direito */
+  .services-left,
+  .services-right {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  /* Serviço individual */
+  .service-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--quinta-cor);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  } */
+  
+  /* Ícones à esquerda e à direita */
+  .icon-left .service-icon,
+  .icon-right .service-icon {
+    font-size: 2.5rem;
+    color: var(--quinta-cor);
+    background-color: var(--segunda-cor);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 6px solid var(--quinta-cor);
+  }
+  
+  .icon-left .service-icon:hover,
+  .icon-right .service-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  /* Informações do serviço */
+  .service-info {
+    text-align: left;
+  }
+  
+  .service-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--segunda-cor);
+  }
+  
+  .service-info p {
+    font-size: 1rem;
+    color: var(--terceira-cor);
+  }
+  
+  .services-right .service-info h3,
+  .services-right .service-info p {
+    text-align: right;
+  }
+  
+  /* Mini certificado */
+  .services-highlight {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--quinta-cor);
+    border: 6px double var(--segunda-cor);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .certificate-icon {
+    font-size: 3rem;
+    color: var(--segunda-cor);
+    margin-bottom: 10px;
+  }
+  
+  .highlight-message {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--terceira-cor);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 1024px) {
+    /* Ajuste para tablets */
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services-left,
+    .services-right {
+      width: 100%;
+    }
+  
+    .service-item {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .service-info {
+      text-align: center;
+    }
+  
+    .icon-left .service-icon,
+    .icon-right .service-icon {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Ajuste para dispositivos móveis */
+    .section-title {
+      font-size: 2rem;
+    }
+    .services-right .service-info h3,
+    .services-right .service-info p {
+      text-align: center;
+    }
+    .icon-graduation {
+      font-size: 1.5rem;
+    }
+  
+    .services-highlight {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .certificate-icon {
+      font-size: 2.5rem;
+    }
+  
+    .highlight-message {
+      font-size: 0.9rem;
+    }
+  
+    .service-info h3 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .service-info p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  

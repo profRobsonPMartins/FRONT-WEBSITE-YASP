@@ -1,0 +1,122 @@
+.galeria-container {
+    background-color: var(--quinta-cor);
+    color: var(--quinta-cor);
+    padding: 40px 20px;
+  }
+  
+  .galeria-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .galeria-header h1 {
+    font-size: 2.5em;
+    color: var(--segunda-cor);
+    margin-bottom: 10px;
+  }
+  
+  .galeria-header p {
+    font-size: 1.2em;
+    color: var(--quarta-cor);
+  }
+  
+  .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .galeria-item {
+    position: relative;
+    background-color: var(--quarta-cor);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .galeria-image {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .galeria-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--quinta-cor);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .galeria-destaques {
+    margin-top: 50px;
+  }
+  
+  .galeria-destaques h2 {
+    font-size: 2.2em;
+    color: var(--segunda-cor);
+    margin-bottom: 20px;
+  }
+  
+  .destaques-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .destaque-item {
+    background-color: var(--quarta-cor);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .destaque-item h3 {
+    font-size: 1.5em;
+    color: var(--segunda-cor);
+    margin-bottom: 10px;
+  }
+  
+  .destaque-item p {
+    font-size: 1.1em;
+    color: var(--quinta-cor);
+  }
+  
+  @media (max-width: 768px) {
+    .galeria-header h1 {
+      font-size: 2em;
+    }
+  
+    .galeria-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .galeria-caption {
+      font-size: 1em;
+      padding: 5px 10px;
+    }
+  
+    .destaques-list {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .galeria-header h1 {
+      font-size: 1.8em;
+    }
+  
+    .galeria-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .galeria-item {
+      height: 200px;
+    }
+  }
