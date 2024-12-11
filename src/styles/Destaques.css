@@ -1,92 +1,93 @@
-
+/* Container principal */
 .destaques-container {
-    background-color: var(--quinta-cor);
-    color: var(--quinta-cor);
-    padding: 40px 20px;
-  }
-  
-  .destaques-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .destaques-header h1 {
-    font-size: 2.5em;
-    color: var(--segunda-cor);
-    margin-bottom: 10px;
-  }
-  
-  .destaques-header p {
-    font-size: 1.2em;
-    color: var(--quarta-cor);
-  }
-  
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Cabeçalho */
+.destaques-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.destaques-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Cards */
+.destaques-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.destaque-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destaque-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.destaque-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Informações do card */
+.destaque-info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.destaque-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.destaque-info h3 i {
+  font-size: 1.2rem;
+}
+
+/* Cores das medalhas */
+.medalha-ouro {
+  color: gold; /* Cor dourada para ouro */
+}
+
+.medalha-prata {
+  color: silver; /* Cor prata */
+}
+
+.medalha-bronze {
+  color: #cd7f32; /* Cor bronze */
+}
+
+.destaque-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   .destaques-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .destaque-card {
-    background-color: var(--segunda-cor);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(3, 6, 96, 0.743);
-    width: 30%;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .destaque-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .destaque-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  .destaque-info {
-    padding: 20px;
-  }
-  
-  .destaque-info h3 {
-    font-size: 1.6em;
-    color: var(--terceira-cor);
-    margin-bottom: 10px;
-  }
-  
-  .destaque-info p {
-    font-size: 1.1em;
-    color: var(--quinta-cor);
-  }
-  
-  @media (max-width: 768px) {
-    .destaques-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .destaque-card {
-      width: 80%;
-      margin-bottom: 20px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .destaques-header h1 {
-      font-size: 2em;
-    }
-  
-    .destaque-info h3 {
-      font-size: 1.4em;
-    }
-  
-    .destaque-info p {
-      font-size: 1em;
-    }
-  }
-  
+}
