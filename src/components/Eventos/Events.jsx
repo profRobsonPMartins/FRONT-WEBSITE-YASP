@@ -98,7 +98,7 @@ const Events = () => {
                     </div>
                 ))}
             </div>
-            <button className="view-calendar-btn">View Event Calendar</button>
+            <button className="view-calendar-btn"><a href="https://atendimento.educacao.sp.gov.br/knowledgebase/article/SED-07925/pt-br" target="_blank">Calendário 2025</a></button>
         </section>
     )
 }
