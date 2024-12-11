@@ -41,7 +41,7 @@ const Destaques = () => {
             <p>
               Maria Souza foi a grande vencedora da Olimpíada Brasileira de
               Astronomia e Astronáutica, representando nossa escola com grande
-              brilho e paixão pela ciência.
+              brilho e paixão pela ciência..
             </p>
           </div>
         </div>
@@ -113,14 +113,14 @@ const Destaques = () => {
               <i className="fa-solid fa-medal medalha-bronze"></i> Olimpíada de Redação
             </h3>
             <p>
-              A aluna Ana Costa conquistou o primeiro lugar na Olimpíada Nacional
+              A aluna  Ana Costa conquistou o primeiro lugar na Olimpíada Nacional
               de Redação, com seu texto premiado abordando temas de relevância
               social.
             </p>
           </div>
         </div>
 
-        
+
       </div>
     </section>
   );
