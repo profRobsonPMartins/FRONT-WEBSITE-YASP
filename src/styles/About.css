@@ -1,99 +1,112 @@
-/* Seção principal */
+
+  /* Mini certificado */
+  .services-highlight {
+    display: none;
+  }
+  
+  
+/* Ajuste para a seção principal */
 .about-section {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px 20px;
-    text-align: center;
-  }
-  
-  .section-title-h2{
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--terceira-cor);
-    margin-bottom: 30px;
-    position: relative;
-  }
-/*   
-  .icon-graduation {
-    margin-left: 10px;
-    color: var(--segunda-cor);
-    font-size: 40px;
-  } */
-  
-  /* Container dos serviços */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--quinta-cor);
+}
+
+/* Título da seção */
+.section-title-h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--terceira-cor);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Container dos serviços */
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Lados esquerdo e direito */
+.services-left,
+.services-right {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* Serviço individual */
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--quinta-cor);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+/* Ícone */
+.service-icon {
+  border: 8px solid var(--quinta-cor);
+  font-size: 2.5rem;
+  color: var(--quinta-cor);
+  background-color: var(--segunda-cor);
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 3px 6px var(--segunda-cor);
+}
+.service-icon:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+/* Informações do serviço */
+.service-info h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--segunda-cor);
+  margin-bottom: 5px;
+}
+
+.service-info p {
+  font-size: 1rem;
+  color: var(--quarta-cor);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
   .services-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
   }
-  
-  /* Lados esquerdo e direito */
   .services-left,
   .services-right {
-    flex: 1;
-    min-width: 280px;
+      width: 100%;
   }
-  
-  /* Serviço individual */
   .service-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    background: var(--quinta-cor);
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-    transition: transform 0.3s, box-shadow 0.3s;
+      flex-direction: column;
+      text-align: center;
   }
-  
-  /* .service-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  } */
-  
-  /* Ícones à esquerda e à direita */
-  .icon-left .service-icon,
-  .icon-right .service-icon {
-    font-size: 2.5rem;
-    color: var(--quinta-cor);
-    background-color: var(--segunda-cor);
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    border: 6px solid var(--quinta-cor);
+  .service-icon {
+      margin-bottom: 10px;
   }
-  
-  .icon-left .service-icon:hover,
-  .icon-right .service-icon:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  .service-info h3, .service-info p {
+      text-align: center;
   }
-  
-  /* Informações do serviço */
-  .service-info {
-    text-align: left;
-  }
-  
-  .service-info h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--segunda-cor);
-  }
-  
-  .service-info p {
-    font-size: 1rem;
-    color: var(--terceira-cor);
-  }
-  
-  .services-right .service-info h3,
-  .services-right .service-info p {
-    text-align: right;
-  }
-  
-  /* Mini certificado */
+}
+
+@media (max-width: 648px){
   .services-highlight {
     width: 100%;
     max-width: 300px;
@@ -121,70 +134,4 @@
     color: var(--terceira-cor);
   }
   
-  /* Responsividade */
-  @media (max-width: 1024px) {
-    /* Ajuste para tablets */
-    .services-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .services-left,
-    .services-right {
-      width: 100%;
-    }
-  
-    .service-item {
-      width: 100%;
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .service-info {
-      text-align: center;
-    }
-  
-    .icon-left .service-icon,
-    .icon-right .service-icon {
-      margin: 0 auto;
-      text-align: center;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    /* Ajuste para dispositivos móveis */
-    .section-title {
-      font-size: 2rem;
-    }
-    .services-right .service-info h3,
-    .services-right .service-info p {
-      text-align: center;
-    }
-    .icon-graduation {
-      font-size: 1.5rem;
-    }
-  
-    .services-highlight {
-      width: 90%;
-      padding: 15px;
-    }
-  
-    .certificate-icon {
-      font-size: 2.5rem;
-    }
-  
-    .highlight-message {
-      font-size: 0.9rem;
-    }
-  
-    .service-info h3 {
-      font-size: 1.2rem;
-      text-align: center;
-    }
-  
-    .service-info p {
-      font-size: 0.9rem;
-    }
-  }
-  
-  
+}
