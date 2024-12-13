@@ -65,7 +65,7 @@
   align-items: center;
   width: 60px;
   height: 60px;
-  box-shadow: 0 3px 6px var(--segunda-cor);
+  box-shadow: 0 3px 6px var(--terceira-cor);
 }
 .service-icon:hover{
   transform: translateY(-5px);
@@ -77,11 +77,13 @@
   font-weight: bold;
   color: var(--segunda-cor);
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .service-info p {
   font-size: 1rem;
   color: var(--quarta-cor);
+  text-align: center;
 }
 
 /* Responsividade */
@@ -134,4 +136,43 @@
     color: var(--terceira-cor);
   }
   
+}
+
+/* Estilos para a seção "Sobre Nós" */
+.about-us {
+  background-color: var(--quinta-cor);
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--segunda-cor);
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: var(--quarta-cor);
+  line-height: 1.5;
+}
+.about-us p  strong{
+  color: var(--segunda-cor);
+}
+/* Responsividade */
+@media (max-width: 648px) {
+  .about-us {
+    padding: 20px;
+  }
+
+  .about-us h2 {
+    font-size: 28px;
+  }
+
+  .about-us p {
+    font-size: 1rem;
+  }
 }

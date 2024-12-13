@@ -41,6 +41,7 @@
 .faq-question h3 {
   font-size: 1.25rem;
   color: var(--terceira-cor);
+  margin: 0;
 }
 
 .faq-toggle-icon {
@@ -49,7 +50,7 @@
 }
 
 .faq-answer {
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
   color: var(--quarta-cor);
   font-size: 1rem;
 }

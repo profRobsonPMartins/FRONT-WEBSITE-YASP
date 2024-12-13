@@ -55,7 +55,7 @@ const News = () => {
 
   return (
     <section className="news-section">
-      <h2 className="section-title">Últimas Notícias</h2>
+      <h2 className="section-title-newss">Últimas Notícias</h2>
       <div className="news-grid">
         {articles.map((article, index) => (
           <div className="news-card" key={index}>
@@ -78,7 +78,7 @@ const News = () => {
           </div>
         ))}
       </div>
-      <button className="view-all-btn"><a href="https://www.saopaulo.sp.gov.br/spnoticias/ultimas-noticias/" target="_blank">Ver Todas as Notícias</a></button>
+      <button className="view-all-btn"><a href="https://www.saopaulo.sp.gov.br/spnoticias/ultimas-noticias/" target="_blank">Notícias</a></button>
     </section>
   );
 };

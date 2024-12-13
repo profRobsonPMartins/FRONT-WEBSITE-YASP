@@ -1,4 +1,3 @@
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -24,23 +23,23 @@ const Hero = () => {
     const slides = [
         {
             img: img03, 
-            title: "Construindo um Futuro Melhor",
+            title: "Construindo um futuro melhor!",
             text: "Aqui, o aprendizado transforma vidas.",
         },
         {
             img: img01,
-            title: "Inclusão e Oportunidades para Todos",
+            title: "Inclusão e oportunidades para todos.",
             text: "Acreditamos no poder da educação inclusiva e gratuita.",
         },
         {
             img: img02,
-            title: "Educação de Qualidade para Todos",
+            title: "Educação de qualidade para todos",
             text: "Na nossa escola, cada estudante tem a oportunidade de aprender.",
         },
     ];
 
     return (
-        <section className="hero-slider">
+        <section className="hero-slider" id="hero-slider">
             <Slider {...settings}>
                 {slides.map((slide, index) => (
                     <div key={index} className="slide">
@@ -49,7 +48,10 @@ const Hero = () => {
                             <h1>{slide.title}</h1>
                             <p>{slide.text}</p>
                             <div className="hero-buttons">
-                                <button className="btn-primary">Entre em Contato</button>
+                                {/* Adicionando o link de mailto no botão */}
+                                <a href="#footer-about">
+                                    <button className="btn-primary">Entre em Contato</button>
+                                </a>
                             </div>
                         </div>
                     </div>

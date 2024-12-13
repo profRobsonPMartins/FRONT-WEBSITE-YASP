@@ -4,8 +4,8 @@
     text-align: center;
 }
 
-.section-title {
-    font-size: var(--titulo-size);
+.section-title-newss {
+    font-size: 40px;
     margin-bottom: 1.5rem;
     font-weight: bold;
     color: var(--segunda-cor);

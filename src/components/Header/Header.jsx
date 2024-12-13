@@ -17,16 +17,16 @@ const Header = () => {
         <nav className={`nav-links ${isOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="#hero-slider">Home</a>
             </li>
             <li>
-              <a href="#courses">Courses</a>
+              <a href="#destaques">Destaques</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about-us">About</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#footer-about">Contact</a>
             </li>
           </ul>
         </nav>

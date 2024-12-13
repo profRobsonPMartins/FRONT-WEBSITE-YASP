@@ -3,7 +3,7 @@ import "../../styles/Destaques.css";
 
 const Destaques = () => {
   return (
-    <section className="destaques-container">
+    <section className="destaques-container" id="destaques">
       <div className="destaques-header">
         <h1>Destaques Acadêmicos</h1>
         <p>Parabéns aos alunos que se destacaram nas competições acadêmicas!</p>

@@ -71,7 +71,7 @@ const Events = () => {
     ]
     return (
         <section className="events-section">
-            <h2 className="section-title">
+            <h2 className="section-title-events">
                 Eventos
             </h2>
             <div className="events-grid">

@@ -4,10 +4,10 @@
     background-color: var(--background-body);
   }
   
-  .section-title {
-    font-size: var(--subtitulo-size);
+  .section-title-dados {
+    font-size: 40px;
     margin-bottom: 1rem;
-    color: var(--primeira-cor);
+    color: var(--segunda-cor);
   }
   
   .section-description {

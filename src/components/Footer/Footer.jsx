@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="footer-section">
-          <div className="footer-about">
+          <div className="footer-about" id="footer-about">
             <h2 className="footer-title">Escola Estadual Prof. Yolanda Araújo Silva Paiva</h2>
             <p>
               Bem-vindo à nossa escola! Nos dedicamos a oferecer uma educação de qualidade para formar cidadãos críticos e atuantes.

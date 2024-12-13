@@ -4,14 +4,14 @@ import '../../styles/Dados.css'
 const Dados = () => {
     return(
         <section className="statistics-section">
-            <h2 className="section-title">Estatísticas da Escola</h2>
+            <h2 className="section-title-dados">Estatísticas da Escola</h2>
             <p className="section-description">
                 A nossa escola oferece uma educação de qualidade com uma equipe altamente capacitada e infraestrutura de ponta, buscando sempre o melhor para nossos alunos e a comunidade escolar.
             </p>
             <div className="statistics-grid">
                 <div className="stat-card">
                     <i className="fas fa-graduation-cap"></i>
-                    <h3>85%</h3> {/* Ajustado com um valor de taxa de graduados */}
+                    <h3>99%</h3> {/* Ajustado com um valor de taxa de graduados */}
                     <p>Taxa de Graduação</p>
                 </div>
                 <div className="stat-card">

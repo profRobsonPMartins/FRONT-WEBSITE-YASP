@@ -7,9 +7,9 @@
 
 /* Cabeçalho */
 .destaques-header h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--segunda-cor);
 }
 
 .destaques-header p {
@@ -54,9 +54,9 @@
 }
 
 .destaque-info h3 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: #444;
+  color: var(--terceira-cor);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -80,9 +80,10 @@
 }
 
 .destaque-info p {
-  font-size: 1rem;
+  font-size: .875rem;
   line-height: 1.5;
-  color: #555;
+  color: var(--primeira-cor);
+  text-align: justify;
 }
 
 /* Responsividade */
